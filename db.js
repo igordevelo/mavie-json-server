@@ -134,7 +134,7 @@ module.exports = {
     {
       id: 0,
       userName: "Frank Ricciardi",
-      profilePicture: "",
+      profilePicture: "https://via.placeholder.com/20",
       city: "Santa Monica",
       state: "CA",
       country: "USA",
@@ -154,7 +154,7 @@ module.exports = {
     {
       id: 2,
       userName: "Dave J. Allen",
-      profilePicture: "",
+      profilePicture: "https://via.placeholder.com/20",
       city: "Pittston",
       state: "PA",
       country: "USA",
@@ -174,7 +174,7 @@ module.exports = {
     {
       id: 4,
       userName: "Maria Guerra",
-      profilePicture: "",
+      profilePicture: "https://via.placeholder.com/20",
       city: "Burr Ridge",
       state: "IL",
       country: "USA",
