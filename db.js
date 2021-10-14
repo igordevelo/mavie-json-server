@@ -138,6 +138,8 @@ module.exports = {
       city: "Santa Monica",
       state: "CA",
       country: "USA",
+      code: "000000",
+      phone: "+48000000000"
     },
     {
       id: 1,
@@ -146,6 +148,8 @@ module.exports = {
       city: "Washington",
       state: "DC",
       country: "USA",
+      code: "111111",
+      phone: "+48111111111"
     },
     {
       id: 2,
@@ -154,6 +158,7 @@ module.exports = {
       city: "Pittston",
       state: "PA",
       country: "USA",
+      code: "222222",phone: "+48222222222"
     },
     {
       id: 3,
@@ -162,6 +167,7 @@ module.exports = {
       city: "Norfolk",
       state: "VA",
       country: "USA",
+      code: "333333",phone: "+48333333333"
     },
     {
       id: 4,
@@ -170,6 +176,7 @@ module.exports = {
       city: "Burr Ridge",
       state: "IL",
       country: "USA",
+      code: "444444",phone: "+48444444444"
     },
   ],
 };
