@@ -8,6 +8,14 @@ const port = process.env.PORT || 3000;
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
+function uuidv4() {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+    var r = (Math.random() * 16) | 0,
+      v = c == "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
 server.post("/auth/login", (req, res) => {
   const { identity } = req.body;
   if (identity == null) {
@@ -56,6 +64,11 @@ server.post("/auth/verify-code", (req, res) => {
       error: "user with this code not existing",
     });
   }
+
+  userFound.authData = {
+    accessToken: uuidv4(),
+    refreshToken: uuidv4(),
+  };
 
   res.send(userFound);
 });
