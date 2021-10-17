@@ -35,11 +35,10 @@ server.post("/auth/login", (req, res) => {
   if (userFound == null) {
     res.status(400).jsonp({
       status: "error",
-      error: "user with this code not existing",
     });
   }
 
-  res.send({ status: "ok" });
+  res.status(200).jsonp({ status: "ok" });
 });
 
 // Add custom routes before JSON Server router
@@ -47,12 +46,14 @@ server.post("/auth/verify-code", (req, res) => {
   const { code } = req.body;
   if (code == null) {
     res.status(400).jsonp({
+      status: "error",
       error: "code:string parameter missing",
     });
   }
 
   if (typeof code !== "string") {
     res.status(400).jsonp({
+      status: "error",
       error: "code should be string",
     });
   }
@@ -61,6 +62,7 @@ server.post("/auth/verify-code", (req, res) => {
 
   if (userFound == null) {
     res.status(400).jsonp({
+      status: "error",
       error: "user with this code not existing",
     });
   }
@@ -70,7 +72,7 @@ server.post("/auth/verify-code", (req, res) => {
     refreshToken: uuidv4(),
   };
 
-  res.send(userFound);
+  res.status(200).jsonp({ status: "ok", data: userFound });
 });
 
 server.use(router);
