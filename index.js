@@ -1,9 +1,10 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
-const db = require("./db.js");
+const db = require("./db.json");
 const router = jsonServer.router(db);
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
+const axios = require("axios");
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
@@ -171,6 +172,44 @@ server.post("/auth/verify-code", (req, res) => {
   };
 
   res.status(200).jsonp({ status: "ok", data: userFound });
+});
+
+// function validateStringInput(stringParameter) {
+//   if (stringParameter == null) {
+//     return { success: false, error: `${stringParameter} is required` };
+//   }
+
+//   if (typeof stringParameter !== "string") {
+//     return { success: false, error: `${stringParameter} should be a string` };
+//   }
+
+//   return { success: true };
+// }
+
+server.post("/account/register", (req, res) => {
+  const {
+    firstName,
+    lastName,
+    email,
+    secondaryEmail,
+    country,
+    city,
+    state,
+    yearOfBirth,
+  } = req.body;
+
+  if (firstName == null) {
+    res.status(400).jsonp({
+      status: "error",
+      error: "firstName is required",
+    });
+  }
+
+  axios.post("http://localhost:3000/users", req.body).then(function (response) {
+    console.log(response)
+    console.log("user added");
+    res.status(200).jsonp({ status: "ok", data: req.body });
+  });
 });
 
 // Add custom routes before JSON Server router
