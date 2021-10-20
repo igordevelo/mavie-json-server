@@ -188,17 +188,10 @@ server.post("/auth/verify-code", (req, res) => {
 
 server.post("/account/register", (req, res) => {
   const {
-    firstName,
-    lastName,
-    email,
-    secondaryEmail,
-    country,
-    city,
-    state,
-    yearOfBirth,
+    first_name,
   } = req.body;
 
-  if (firstName == null) {
+  if (first_name == null) {
     res.status(400).jsonp({
       status: "error",
       error: "firstName is required",

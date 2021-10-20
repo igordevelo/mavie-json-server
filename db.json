@@ -21,43 +21,40 @@
       "id": 0,
       "name": "Air mini",
       "price": 499,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image1.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image1.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "30%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.8",
       "reviews": 82,
       "saved": true,
-      "tags": [
-        "happiness",
-        "productivity"
-      ],
-      "otherBrandsProducts": [
+      "tags": ["happiness", "productivity"],
+      "other_brands_products": [
         {
           "id": 1,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 2,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     },
@@ -65,90 +62,83 @@
       "type": "product",
       "id": 1,
       "name": "Air mini+",
-      "tags": [
-        "happiness",
-        "productivity"
-      ],
+      "tags": ["happiness", "productivity"],
       "saved": false,
       "price": 499,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image2.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image2.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "20%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.5",
       "reviews": 49,
-      "otherBrandsProducts": [
+      "other_brands_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     },
     {
       "type": "product",
       "id": 2,
-      "tags": [
-        "happiness",
-        "productivity",
-        "Extra char's"
-      ],
+      "tags": ["happiness", "productivity", "Extra char's"],
       "saved": false,
       "name": "Air mini+",
       "price": 499,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image3.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image3.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "20%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.5",
       "reviews": 49,
-      "otherBrandsProducts": [
+      "other_brands_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     }
@@ -160,38 +150,38 @@
       "saved": false,
       "name": "Service 1",
       "price": 399,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image4.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image4.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "30%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.8",
       "reviews": 82,
-      "otherBrandsProducts": [
+      "other_brands_products": [
         {
           "id": 1,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 2,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini +",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     },
@@ -201,38 +191,38 @@
       "name": "Service 2",
       "saved": false,
       "price": 499,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image5.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image5.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "20%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.5",
       "reviews": 49,
-      "otherBrandsProducts": [
+      "other_brands_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 2,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     },
@@ -242,38 +232,38 @@
       "saved": true,
       "name": "Service 3",
       "price": 499,
-      "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image6.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image6.png",
       "description": "Air Mini+’s sensor rates air particle levels from “Good” to “Very bad,” offering a glance into your indoor air. Air Mini+’s distinguishing mode delivers particle protection by auto-adjusting fan speed based on the sensor. Choose between Auto Protect or five fan speeds, and track your PECO-Filter status from your app, wherever you are. ",
       "cashback": "20%",
-      "maxQuantity": 100,
+      "max_quantity": 100,
       "rating": "4.5",
       "reviews": 49,
-      "otherBrandsProducts": [
+      "other_brands_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ],
-      "relatedProducts": [
+      "related_products": [
         {
           "id": 0,
           "name": "Air mini",
           "price": 399,
-          "imageUrl": ""
+          "image": ""
         },
         {
           "id": 1,
           "name": "Air mini+",
           "price": 499,
-          "imageUrl": ""
+          "image": ""
         }
       ]
     }
@@ -321,8 +311,10 @@
   "users": [
     {
       "id": 0,
-      "userName": "Frank Ricciardi",
-      "profilePicture": "https://via.placeholder.com/20",
+      "first_name": "Frank",
+      "last_name": "Ricciardi",
+      "user_name": "Frank Ricciardi",
+      "image": "https://via.placeholder.com/20",
       "city": "Santa Monica",
       "state": "CA",
       "country": "USA",
@@ -333,8 +325,10 @@
     },
     {
       "id": 1,
-      "userName": "Ernest Johnson",
-      "profilePicture": "",
+      "first_name": "Ernest",
+      "last_name": "Johnson",
+      "user_name": "Ernest Johnson",
+      "image": "",
       "city": "Washington",
       "state": "DC",
       "country": "USA",
@@ -345,8 +339,10 @@
     },
     {
       "id": 2,
-      "userName": "Dave J. Allen",
-      "profilePicture": "https://via.placeholder.com/20",
+      "first_name": "Dave",
+      "last_name": "Allen",
+      "user_name": "Dave Allen",
+      "image": "https://via.placeholder.com/20",
       "city": "Pittston",
       "state": "PA",
       "country": "USA",
@@ -357,8 +353,10 @@
     },
     {
       "id": 3,
-      "userName": "Arthur Glenn",
-      "profilePicture": "",
+      "first_name": "Arthur",
+      "last_name": "Glenn",
+      "user_name": "Arthur Glenn",
+      "image": "",
       "city": "Norfolk",
       "state": "VA",
       "country": "USA",
@@ -369,8 +367,10 @@
     },
     {
       "id": 4,
-      "userName": "Maria Guerra",
-      "profilePicture": "https://via.placeholder.com/20",
+      "first_name": "Maria",
+      "last_name": "Guerra",
+      "user_name": "Maria Guerra",
+      "image": "https://via.placeholder.com/20",
       "city": "Burr Ridge",
       "state": "IL",
       "country": "USA",
