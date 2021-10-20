@@ -216,7 +216,12 @@ server.get("/screen/home", (req, res) => {
   const response = {
     status: "ok",
     data: {
-      notification: "Your employer just deposited $10 in your account.",
+      notification: {
+        type: "success",
+        title: "Good News",
+        body: "Your employer just deposited $10 in your account.",
+        route: "/account",
+      },
       balance: 255,
       saved: db.saved,
       market: db.products,
