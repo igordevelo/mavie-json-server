@@ -28,7 +28,10 @@
       "rating": "4.8",
       "reviews": 82,
       "saved": true,
-      "tags": ["happiness", "productivity"],
+      "tags": [
+        "happiness",
+        "productivity"
+      ],
       "otherBrandsProducts": [
         {
           "id": 1,
@@ -62,7 +65,10 @@
       "type": "product",
       "id": 1,
       "name": "Air mini+",
-      "tags": ["happiness", "productivity"],
+      "tags": [
+        "happiness",
+        "productivity"
+      ],
       "saved": false,
       "price": 499,
       "imageUrl": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image2.png",
@@ -103,7 +109,11 @@
     {
       "type": "product",
       "id": 2,
-      "tags": ["happiness", "productivity", "Extra char's"],
+      "tags": [
+        "happiness",
+        "productivity",
+        "Extra char's"
+      ],
       "saved": false,
       "name": "Air mini+",
       "price": 499,

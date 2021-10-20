@@ -202,13 +202,12 @@ server.post("/account/register", (req, res) => {
     res.status(400).jsonp({
       status: "error",
       error: "firstName is required",
+      success: false,
     });
   }
 
   axios.post("http://localhost:3000/users", req.body).then(function (response) {
-    console.log(response)
-    console.log("user added");
-    res.status(200).jsonp({ status: "ok", data: req.body });
+    res.status(200).jsonp({ status: "ok", success: true, data: response.data });
   });
 });
 
