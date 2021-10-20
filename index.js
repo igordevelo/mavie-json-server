@@ -194,7 +194,7 @@ server.post("/account/register", (req, res) => {
   if (first_name == null) {
     res.status(400).jsonp({
       status: "error",
-      error: "firstName is required",
+      error: "first_name is required",
       success: false,
     });
   }
