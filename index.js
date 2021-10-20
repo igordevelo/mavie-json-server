@@ -199,7 +199,7 @@ server.post("/account/register", (req, res) => {
     });
   }
 
-  axios.post("http://localhost:3000/users", req.body).then(function (response) {
+  axios.post("https://mavie-json-server.herokuapp.com/users", req.body).then(function (response) {
     res.status(200).jsonp({ status: "ok", success: true, data: response.data });
   });
 });
