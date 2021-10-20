@@ -16,32 +16,130 @@ function uuidv4() {
   });
 }
 
-server.post("/auth/login", (req, res) => {
-  const { identity } = req.body;
-  if (identity == null) {
+server.post("/auth/email/login", (req, res) => {
+  const { email } = req.body;
+  if (email == null) {
     res.status(400).jsonp({
-      error: "identity:string parameter missing",
+      success: false,
+      status: "error",
+      error: "email:string parameter missing",
     });
   }
 
-  if (typeof identity !== "string") {
+  if (typeof email !== "string") {
     res.status(400).jsonp({
-      error: "identity should be string",
+      success: false,
+      status: "error",
+      error: "email should be string",
     });
   }
 
-  const userFound = db.users.find((user) => user.phone === identity);
+  const userFound = db.users.find((user) => user.email === email);
+
+  if (userFound == null) {
+    res.status(400).jsonp({ success: false, error: "user not existing" });
+  }
+
+  res.status(200).jsonp({ success: true, status: "ok" });
+});
+
+server.post("/auth/email/verify", (req, res) => {
+  const { email, token } = req.body;
+  if (email == null) {
+    res.status(400).jsonp({
+      error: "email:string parameter missing",
+    });
+  }
+
+  if (token == null) {
+    res.status(400).jsonp({
+      error: "token:string parameter missing",
+    });
+  }
+
+  const userFound = db.users.find(
+    (user) => user.email === email && user.token === token
+  );
 
   if (userFound == null) {
     res.status(400).jsonp({
       status: "error",
+      success: false,
+      error: "user not existing or token not valid",
     });
   }
 
-  res.status(200).jsonp({ status: "ok" });
+  res.status(200).jsonp({
+    status: "ok",
+    success: true,
+    tokens: { access: uuidv4(), refresh: uuidv4() },
+    data: userFound,
+  });
+});
+
+server.post("/auth/phone/login", (req, res) => {
+  const { phone } = req.body;
+  if (phone == null) {
+    res.status(400).jsonp({
+      success: false,
+      status: "error",
+      error: "phone:string parameter missing",
+    });
+  }
+
+  if (typeof phone !== "string") {
+    res.status(400).jsonp({
+      success: false,
+      status: "error",
+      error: "phone should be string",
+    });
+  }
+
+  const userFound = db.users.find((user) => user.phone === phone);
+
+  if (userFound == null) {
+    res.status(400).jsonp({ success: false, error: "user not existing" });
+  }
+
+  res.status(200).jsonp({ success: true, status: "ok" });
+});
+
+server.post("/auth/phone/verify", (req, res) => {
+  const { phone, code } = req.body;
+  if (phone == null) {
+    res.status(400).jsonp({
+      error: "phone:string parameter missing",
+    });
+  }
+
+  if (code == null) {
+    res.status(400).jsonp({
+      error: "code:string parameter missing",
+    });
+  }
+
+  const userFound = db.users.find(
+    (user) => user.phone === phone && user.code === code
+  );
+
+  if (userFound == null) {
+    res.status(400).jsonp({
+      status: "error",
+      success: false,
+      error: "user not existing or code not valid",
+    });
+  }
+
+  res.status(200).jsonp({
+    status: "ok",
+    success: true,
+    tokens: { access: uuidv4(), refresh: uuidv4() },
+    data: userFound,
+  });
 });
 
 // Add custom routes before JSON Server router
+// deprecated
 server.post("/auth/verify-code", (req, res) => {
   const { code } = req.body;
   if (code == null) {
