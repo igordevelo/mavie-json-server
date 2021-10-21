@@ -187,9 +187,7 @@ server.post("/auth/verify-code", (req, res) => {
 // }
 
 server.post("/account/register", (req, res) => {
-  const {
-    first_name,
-  } = req.body;
+  const { first_name } = req.body;
 
   if (first_name == null) {
     res.status(400).jsonp({
@@ -199,9 +197,13 @@ server.post("/account/register", (req, res) => {
     });
   }
 
-  axios.post("https://mavie-json-server.herokuapp.com/users", req.body).then(function (response) {
-    res.status(200).jsonp({ status: "ok", success: true, data: response.data });
-  });
+  axios
+    .post("https://mavie-json-server.herokuapp.com/users", req.body)
+    .then(function (response) {
+      res
+        .status(200)
+        .jsonp({ status: "ok", success: true, data: response.data });
+    });
 });
 
 // Add custom routes before JSON Server router
@@ -247,6 +249,7 @@ server.get("/screen/market", (req, res) => {
           earn: { type: "percentage", amount: 8 },
           image:
             "https://atmz-develo.s3.eu-central-1.amazonaws.com/imagemarketheader.png",
+          route: "/account",
         },
         {
           id: 2,
@@ -255,6 +258,7 @@ server.get("/screen/market", (req, res) => {
           earn: { type: "percentage", amount: 5 },
           image:
             "https://atmz-develo.s3.eu-central-1.amazonaws.com/imagemarketheader.png",
+          route: "/profile",
         },
       ],
       saved: db.saved,
