@@ -280,7 +280,7 @@
       "type": "product",
       "id": 0,
       "name": "Air mini",
-      "price": "$10.00",
+      "price": 10,
       "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image1.png"
     },
     {
@@ -304,7 +304,7 @@
       "type": "product",
       "id": 1,
       "name": "Air mini",
-      "price": "$10.00",
+      "price": 10,
       "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/image2.png"
     }
   ],
