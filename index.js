@@ -219,8 +219,8 @@ server.get("/screen/home", (req, res) => {
       },
       balance: 255,
       saved: db.saved,
-      market: db.products,
-      content: db.posts,
+      market: { title: "shop well TO BE WELL", items: db.products },
+      content: { title: "WELLNESS NUGGETS", items: db.posts },
     },
   };
 
