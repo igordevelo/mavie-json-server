@@ -4,14 +4,14 @@
       "id": 1,
       "title": "json-server",
       "body": "<p>html <strong>bolded</strong> string</p> <p>second paragraph</p>",
-      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/imagepost1.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/rectangle-210.jpg",
       "saved": true
     },
     {
       "id": 2,
       "title": "json-server-test",
       "body": "<p>html <strong>bolded</strong> string</p> <p>second paragraph</p>",
-      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/imagepost1.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/rectangle-210.jpg",
       "saved": false
     }
   ],
@@ -288,7 +288,7 @@
       "title": "json-server",
       "type": "content",
       "body": "<p>html <strong>bolded</strong> string</p> <p>second paragraph</p>",
-      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/imagepost1.png",
+      "image": "https://atmz-develo.s3.eu-central-1.amazonaws.com/rectangle-210.jpg",
       "saved": true
     }
   ],
@@ -320,7 +320,7 @@
       "country": "USA",
       "token": "token000000",
       "code": "000000",
-      "phone": "+48000000000",
+      "phone": "+10000000000",
       "email": "user@mavie.com"
     },
     {
@@ -334,7 +334,7 @@
       "country": "USA",
       "token": "token111111",
       "code": "111111",
-      "phone": "+48111111111",
+      "phone": "+11111111111",
       "email": "user+1@mavie.com"
     },
     {
@@ -348,7 +348,7 @@
       "country": "USA",
       "token": "token222222",
       "code": "222222",
-      "phone": "+48222222222",
+      "phone": "+12222222222",
       "email": "user+2@mavie.com"
     },
     {
@@ -362,7 +362,7 @@
       "country": "USA",
       "token": "token333333",
       "code": "333333",
-      "phone": "+48333333333",
+      "phone": "+13333333333",
       "email": "user+3@mavie.com"
     },
     {
@@ -376,7 +376,7 @@
       "country": "USA",
       "token": "token444444",
       "code": "444444",
-      "phone": "+48444444444",
+      "phone": "+14444444444",
       "email": "user+4@mavie.com"
     }
   ]
